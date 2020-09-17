@@ -47,7 +47,7 @@ class db_entry:
         return self.code == other
 db_cache = []
 
-with open("./db.csv", "r") as db_file:
+with open("./db.csv", "r", encoding="mbcs") as db_file:
     print("reading db.csv...")
     csv_reader = csv.reader(db_file, delimiter=",")
     for row in csv_reader:
