@@ -9,17 +9,17 @@ Can export to csv file too
 # Example
 
 * Directory of games :
-* PCSG00312
-* PCSG00453
-* PCSA00001
-* PCSA00002
+  * PCSG00312
+  * PCSG00453
+  * PCSA00001
+  * PCSA00002
 
 * Output from the app :
 
-* PCSG00312	J-STARS Victory VS AR Appli 
-* PCSG00453	Shin Sangoku Musou 7 Empires Kyoutouban (Free Alliances Version) 
-* PCSA00001	ModNation Racers: Road Trip 
-* PCSA00002	MLB 12 The Show
+  * PCSG00312	J-STARS Victory VS AR Appli 
+  * PCSG00453	Shin Sangoku Musou 7 Empires Kyoutouban (Free Alliances Version) 
+  * PCSA00001	ModNation Racers: Road Trip 
+  * PCSA00002	MLB 12 The Show
 
 
 
