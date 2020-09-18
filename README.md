@@ -8,9 +8,8 @@ Can export to csv file too
 
 
 # Instalation
-Just download and execute  the vita_games_path.exe (windows defender may not like it)
-Another way to run it, is installing python on your pc and execute Vita_Games_path.py. If nothing happen, open the file with NotePad ++ and delete de first two "#" and change de directory in the file to the right location
-
+Just download and execute  the vitagamedir.exe (windows defender may not like it)
+Another way to run it, is installing python on your pc and execute vitagamedir.py may work with linux!
 
 # Change log
 
