@@ -9,10 +9,10 @@ Can export to csv file too
 # Example
 
 * Directory of games :
-PCSG00312
-PCSG00453
-PCSA00001
-PCSA00002
+#PCSG00312
+#PCSG00453
+#PCSA00001
+#PCSA00002
 
 * Output from the app :
 
