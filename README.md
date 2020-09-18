@@ -3,8 +3,25 @@ Current version : v1.0
 
 # what is vitagamedir
 
-Simple app, that read the name of the game folder with PSVITA GAMES // PSP GAMES // PSX GAMES and show the real name of the game instead of the "Game Id"
+Simple app that you can choose your directory of games (PS VITA GAMES / PSP GAMES / PSX GAMES, and the app show you the real name of the game instead of the "Game Id"
 Can export to csv file too
+
+# Example
+
+* Directory of games :
+
+PCSG00312
+PCSG00453
+PCSA00001
+PCSA00002
+
+* Output from the app :
+
+PCSG00312	J-STARS Victory VS AR Appli
+PCSG00453	Shin Sangoku Musou 7 Empires Kyoutouban (Free Alliances Version)
+PCSA00001	ModNation Racers: Road Trip
+PCSA00002	MLB 12 The Show
+
 
 
 # Instalation
