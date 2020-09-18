@@ -1,5 +1,5 @@
 # vitagamedir
-Current version : v1.0
+Current version : v1.1
 
 # what is vitagamedir
 
