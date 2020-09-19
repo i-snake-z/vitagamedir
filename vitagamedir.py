@@ -7,6 +7,7 @@ from tkinter import filedialog
 from tkinter import messagebox
 from tkinter import ttk
 import csv
+import subprocess
 
 #Settings
 WINDOW_NAME     = "vitagamedir"
@@ -38,10 +39,12 @@ current_dir_games = []
 class db_entry:
     code = ""
     name = ""
+    region = ""
 
-    def __init__(self, code, name):
+    def __init__(self, code, name, region):
         self.code = code
         self.name = name
+        self.region = region
 
     def __eq__(self, other):
         return self.code == other
@@ -52,7 +55,7 @@ with open("./db.csv", "r", encoding="UTF-8") as db_file:
     #print("reading db.csv...")
     csv_reader = csv.reader(db_file, delimiter=",")
     for row in csv_reader:
-        gameinfile = db_entry(row[0], row[1])
+        gameinfile = db_entry(row[0], row[1], row[2])
         db_cache.append(gameinfile)
     #print("done, found {} entries".format(len(db_cache)))
 
@@ -72,9 +75,11 @@ def browseFilesextract():
 
 
 
+
 def names():
     current_dir_games.clear()
     path = game_directory_entry.get()
+
 
     if path == "":
         messagebox.showinfo("Info", "Please insert path of the games")
@@ -98,14 +103,28 @@ def names():
             for game in db_cache:
                 if game == directory:
                     # print("Found {}".format(directory))
-                    current_dir_games.append([game.code, game.name])
+                    current_dir_games.append([game.code, game.name, game.region])
 
         tempList = current_dir_games
-        cols = ('ID_GAME', 'NAME OF GAME')
+
+
+
+        cols = ('Title ID', 'Title Name', 'Title Region')
         listBox = ttk.Treeview(lower_frame, columns=cols, show='headings')
 
-        for i, (name, score) in enumerate(tempList, start=1):
-            listBox.insert("", "end", values=(name, score))
+        for i, (id_game, name_game, region_game) in enumerate(tempList, start=1):
+            listBox.insert("", "end", values=(id_game, name_game,region_game))
+
+            def go(event):
+                # print (listBox.identify_row(event.y))
+                line= listBox.identify_row(event.y)
+
+                value= listBox.item(line)["values"]
+                valuef= value[0]
+                os.startfile(path+"/"+str(valuef))
+
+
+            listBox.bind("<Double-1>", go)
 
         # set column headings
         for col in cols:
@@ -115,6 +134,9 @@ def names():
         listBox.pack(fill='both', expand=1)
 
 
+
+
+
 def extract():
     pathextract = extract_directory_entry.get()
 
@@ -122,7 +144,7 @@ def extract():
         messagebox.showinfo("Info", "Please insert path to extract")
 
     else:
-        fields = ['ID', 'GAME_ID']
+        fields = ['Title ID', 'Title Name', 'Title Region']
 
         filename = pathextract + "/export.csv"
         dirname = os.path.dirname(filename)
