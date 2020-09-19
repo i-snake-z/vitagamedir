@@ -29,6 +29,14 @@ Another way to run it, is installing python on your pc and execute vitagamedir.p
 
 # Change log
 
+
+Vitagamedir v1.2
+
+* Add Region of games on database
+* Now display region too
+* On double click on the game opens directori
+* Fix some Bugs
+
 Vitagamedir v1.1
 
 * Change the database from xlsx to csv for faster read
