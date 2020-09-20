@@ -1,7 +1,7 @@
 # vitagamedir
 Current version : v1.2
 
-# what is vitagamedir
+# What is vitagamedir
 
 Simple app that you can choose your directory of games (PS VITA GAMES / PSP GAMES / PSX GAMES, and the app show you the real name of the game instead of the "Game Id"
 Can export to csv file too
@@ -23,8 +23,8 @@ Can export to csv file too
 
 
 
-# Instalation
-Just download and execute  the vitagamedir.exe (windows defender may not like it)
+# Installation
+Just download and execute the vitagamedir.exe (windows defender may not like it)
 Another way to run it, is installing python on your pc and execute vitagamedir.py may work with linux!
 
 # Change log

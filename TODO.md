@@ -7,3 +7,8 @@
 - This is not really that important, but you may want to add a licence: This is not necessary, but it never hurts to add one just to make sure you don't get into any issues should this project become popular in the future.
 
 But regardless, you did a pretty damn good job for your first app, and you should be proud of it. Keep up the good work!
+
+# Suggestions
+- Consider moving the logic to a homebrew vita application for convenience. Using c++ or c should suffice.
+- Consider bundling in the `.exe` as it is not included right now due to the `.gitignore` file. Create a `/platforms/` or similar directory to include the `.app`, `.exe` and others.
+- Consider adding a screenshot or `.gif` of the application in action in the TODO to grab the users attention.
