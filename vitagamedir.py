@@ -105,8 +105,10 @@ def names():
                     # print("Found {}".format(directory))
                     current_dir_games.append([game.code, game.name, game.region])
 
-        tempList = current_dir_games
 
+        current_dir_games.sort(key=lambda x:x[1])
+
+        tempList = current_dir_games
 
 
         cols = ('Title ID', 'Title Name', 'Title Region')
